@@ -23,7 +23,7 @@ A powerful, production-ready CLI tool to monitor disk health, SMART data, temper
 ## Preview
 
 ```
-assets/dashboard.png
+checkdisk.rajgaud.com
 ```
 
 ---
