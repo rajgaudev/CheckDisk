@@ -35,12 +35,12 @@ checkdisk.rajgaud.com
 ```bash
 git clone https://github.com/rajgaudev/CheckDisk.git
 cd CheckDisk
-```bash
+```
 
 ```bash
 sudo apt update
 sudo apt install -y smartmontools nvme-cli python3 python3-venv
-```bash
+```
 
 ### 2. Install CheckDisk
 
