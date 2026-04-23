@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""checkdisk v4 — Linux Disk Health Monitor (High-Contrast Mono Theme)"""
+"""checkdisk — Linux Disk Health Monitor (High-Contrast Mono Theme)"""
 
 # ─── Bootstrap ────────────────────────────────────────────────────────────────
 import subprocess, sys, os
@@ -471,7 +471,7 @@ SYM_BAR_V = "▌"   # solid vertical bar for left accent
 
 
 HELP_TEXT = f"""
-[{BOX_BORDER}]╭─[/{BOX_BORDER}] [{BOX_TITLE}]CHECKDISK  v4[/{BOX_TITLE}] [{FG2}]─  Linux Disk Health Monitor  ──────────────────────────[/{FG2}][{BOX_BORDER}]╮[/{BOX_BORDER}]
+[{BOX_BORDER}]╭─[/{BOX_BORDER}] [{BOX_TITLE}]CHECKDISK  [/{BOX_TITLE}] [{FG2}]─  Linux Disk Health Monitor  ──────────────────────────[/{FG2}][{BOX_BORDER}]╮[/{BOX_BORDER}]
 [{BOX_BORDER}]│[/{BOX_BORDER}]                                                                          [{BOX_BORDER}]│[/{BOX_BORDER}]
 [{BOX_BORDER}]│[/{BOX_BORDER}]  [{FG0}]COMMANDS[/{FG0}]                                                                [{BOX_BORDER}]│[/{BOX_BORDER}]
 [{BOX_BORDER}]│[/{BOX_BORDER}]    [{FG1}]checkdisk all[/{FG1}]                 Interactive dashboard                [{BOX_BORDER}]│[/{BOX_BORDER}]
@@ -827,7 +827,7 @@ def _header_panel(state: "_State", ts: str) -> Panel:
         lft.append(ch, style=f"bold {col}")
     lft.append("  │ ", style=FG4)
     lft.append("Linux Disk Health Monitor", style=FG2)
-    lft.append("  v4", style=FG4)
+    lft.append("  ", style=FG4)
 
     rgt = Text(justify="right")
     rgt.append(ts, style=FG3)
